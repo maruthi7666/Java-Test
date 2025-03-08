@@ -3,8 +3,6 @@ package Test;
 enum Category {
     SOFTWARE,
     HARDWARE,
-    NETWORK,
-    OTHER
 }
 
 class Employee {
@@ -17,7 +15,7 @@ class Employee {
         this.fullName = fullName;
         this.pointlevel = pointlevel;
         this.assiCategory = assiCategory;
-    }
+    } //constructor intiliaze employee class
 }
 
 class Ticket {
@@ -36,7 +34,7 @@ class Ticket {
         this.point = point;
         this.assiEmp = "";
         this.isCompleted = false;
-    }
+    }// constructor intialize tkt class
 }
 
 public class Helpdesk {
@@ -51,7 +49,7 @@ public class Helpdesk {
         } else if (pos == 2) {
             emp2 = e;
         }
-    }
+    } // methods
 
     public void addTicket(Ticket t, int pos) {
         if (pos == 1) {
